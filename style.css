@@ -11,8 +11,15 @@
   }
   
   header {
-    background-color: #333;
+    background-color: #062349;
     padding: 10px;
+    
+  }
+  #logo{
+    color: #007BFF;
+    text-decoration: none;
+    font-style: oblique;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
   
   nav ul {
@@ -32,10 +39,13 @@
   }
   
   .hero {
-    background-color: #007BFF;
-    color: white;
+    background-color: white;
+    color: rgb(5, 6, 61);
     padding: 50px 0;
     text-align: center;
+    background-image: url(./images/drone\ remove\ bg.png);
+    background-repeat: repeat-x;
+    height: 80vh;
   }
   
   .hero h1 {
@@ -44,16 +54,18 @@
   
   .hero p {
     font-size: 1.2rem;
+    padding-bottom: 200px;
   }
   
   .cta-button {
-    background-color: #fff;
-    color: #007BFF;
+    background-color: #040614;
+    color: #cad7e6;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding: 10px 20px;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     border-radius: 5px;
-    margin-top: 20px;
+
   }
   
   .services {
