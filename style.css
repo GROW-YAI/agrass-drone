@@ -40,17 +40,16 @@ nav ul li a {
 }
 
 .hero {
-    background-color: rgb(213, 245, 163);
+    background-color: rgb(134, 199, 61);
     color: rgb(18, 36, 7);
     padding:20px 0;
     text-align: center;
-    background-image: url(./images/drone-f-3.jpg);
-    background-image: height 100%;
-    background-position: top;
+    background-image: url(./images/add-clouds-drone.jpg);
+    height: 100%;
+    background-position:top;
     background-repeat: repeat-x;
     background-size: cover;
-    
-    height: 100%;
+    background-attachment: fixed;
     background-size: auto;
 }
 
@@ -83,13 +82,37 @@ nav ul li a {
     font-size: 2rem;
     margin-bottom: 30px;
 }
+.about-cards {
+    display: flex;
+    justify-content: space-between;
+}
 
 .about h3 {
     font-size: 2rem;
     margin-bottom: 30px;
     margin-top: 50px;
 }
+.abt-card {
+    background-color: rgb(88, 167, 24);
+    padding: 20px;
+    width: 30%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    justify-content: center;
+    
+}
 
+.abt-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.abt-card p {
+    font-size: 1rem;
+    color: white;
+}
 .about1 {
     display: flex;
     padding-top: 50px;
@@ -120,55 +143,29 @@ nav ul li a {
     border-color: #0f421f;
     align-items: center;
 }
-/*services section
-
-.services {
-    padding: 50px 10%;
-    text-align: center;
-}
-
-.services h2 {
-    font-size: 2rem;
-    margin-bottom: 30px;
-}
-
-.service-cards {
+.abt-innovation {
     display: flex;
     justify-content: space-between;
+    
+}
+.abt-innovation p{
+padding-right: 20px;
+}
+.abt-innovation img {
+    border-radius: 50%;
+    height: 300px;
+    width: 50%;
+    padding-left: 10px;
+    border-style: dashed;
+    box-shadow: 5px;
+    border-width: 5px;
+    border-color: rgb(88, 167, 24);
 }
 
-.card {
-    background-color: white;
-    padding: 20px;
-    width: 30%;
-    height: 250px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    justify-content: center;
-}
 
-.card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-}
-
-.card p {
-    font-size: 1rem;
-    color: #555;
-}
-.icard {
-    width: 10px;
-    height: 10px;
-}
-
-.icard p-img{
-    width: 10%;
-    object-fit: cover;
-
-*/
  /*services 2*/
  .services {
-    padding: 3rem 2rem;
+    padding: 50px 10%;
     text-align: center;
 }
 
