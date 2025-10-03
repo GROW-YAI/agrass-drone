@@ -1,144 +1,532 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agrass Drone Development - Safe Agricultural Solutions</title>
+    <meta
+      name="description"
+      content="Professional drone spraying services for farmers in Ghana. Safe, efficient, and eco-friendly agricultural solutions."
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header  -->
+    <header id="header" class="header">
+      <div class="container">
+        <div class="header-content">
+          <!-- Logo -->
+          <a href="#home" class="logo">
+            <div class="logo-image">
+              <img
+                src="images/agrass-drone-logo.jpg"
+                alt="Agrass Drone Development"
+              />
+            </div>
+            <div class="logo-text">
+              <div class="logo-title">Agrass Drone</div>
+              <div class="logo-subtitle">Development</div>
+            </div>
+          </a>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AGRASS DRONE DEVELOPMENT</title>
-  <link rel="stylesheet" href="style.css">
+          <!-- Desktop Navigation -->
+          <nav class="nav-desktop">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#services" class="nav-link">Services</a>
+            <a href="#contact" class="nav-link">Contact</a>
+          </nav>
 
-  <!-- Add font-awesome for social media icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+          <!-- CTA Button -->
+          <a href="#contact" class="btn btn-primary btn-desktop">Get Started</a>
 
+          <!-- Mobile Menu Button -->
+          <button
+            class="mobile-menu-btn"
+            id="mobileMenuBtn"
+            aria-label="Toggle menu"
+          >
+            <i class="fas fa-bars" id="menuIcon"></i>
+          </button>
+        </div>
 
-
-
-</head>
-
-<body>
-  <header>
-    <div>
-      <img src="./images/agrass-logo.jpeg" alt="business logo" width="100">
-    </div>
-
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section id="home" class="hero">
-    <div class="hero-content">
-      <h1>Welcome to Agrass Drone Development</h1>
-      <p>Providing innovative solutions to help grow your agri-business.</p>
-    </div>
-    <div>
-      <a href="#services" class="cta-button">Our Services</a>
-    </div>
-  </section>
-
-  <section id="about" class="about">
-    <h2>About Agrass Drone Development</h2>
-    <div class="about-cards">
-      <div class="abt-card">
-        <h3>About Us</h3>
-        <p>Agrass Drones Development is a business with the passion for improving agriculture in rural area through the
-          use of drones. We are located at Ayomso in the Ahafo Region close to Ayomso R/C Basic School</p>
+        <!-- Mobile Navigation -->
+        <nav class="nav-mobile" id="mobileMenu">
+          <a href="#home" class="nav-link-mobile">Home</a>
+          <a href="#about" class="nav-link-mobile">About</a>
+          <a href="#services" class="nav-link-mobile">Services</a>
+          <a href="#contact" class="nav-link-mobile">Contact</a>
+          <a href="#contact" class="btn btn-primary btn-mobile">Get Started</a>
+        </nav>
       </div>
-      <div class="abt-card">
-        <h3>Vision</h3>
-        <p>To become the leading provider of agricultural drone spraying services in the region and across Ghana, ensuring
-          safer and more efficient farming practices for rural farmers.</p>
-      </div>
-      <div class="abt-card">
-        <h3>Mision</h3>
-        <p>To revolutionize agriculture by offering farmers an affordable and safe spraying service using drone
-          technology, reducing their exposure to harmful chemicals while increasing productivity and efficiency.</p>
-      </div>
-    </div>
-    <h3>About the Innovation</h3>
-    <div class="abt-innovation">
-      <p>This innovation was born out of the realization that many rural farmers struggle with health risks due to the chemicals they use in their agricultural activities. Despite their hard work to produce food, their well-being is often compromised by direct exposure to harmful pesticides and fertilizers. Recognizing this challenge, the founder set out to develop an agricultural drone service that would handle spraying tasks for farmers, eliminating their direct contact with hazardous chemicals.
-        The service operates on a simple model—farmers can request drone spraying whenever needed, paying for the
-        service rather than investing in expensive technology themselves. This approach makes advanced agricultural
-        solutions accessible to rural farmers, improving their health, productivity, and overall agricultural
-        efficiency.
-        With the ambition to scale from the local community to the entire nation, this initiative aims to transform the
-        way farming is done in Ghana, making agriculture safer, more sustainable, and technologically driven.
-      </p>
-      <img src="./images/Manu- BG.png" alt="">
-    </div>
-     
-    </div>
-  </section>
+    </header>
 
-  <section id="services" class="services">
-    <h2>Our Services</h2>
-    <div class="service-cards">
-      <div class="card">
-        <img src="./images/drone-veg-c.png" alt="Service 1">
-        <div class="card-content">
-          <h3>Service 1</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+    <!-- Hero Section  -->
+    <section id="home" class="hero">
+      <div class="hero-background">
+        <img
+          src="images/agricultural-drone-spraying-farm-field-aerial-view.jpg"
+          alt="Drone spraying agricultural field"
+        />
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="container hero-content">
+        <div class="hero-text">
+          <div class="hero-badge">
+            <i class="fas fa-leaf"></i>
+            <span>Revolutionizing Agriculture in Ghana</span>
+          </div>
+          <h1 class="hero-title">
+            Safe, Efficient Drone Spraying for
+            <span class="text-primary">Modern Farmers</span>
+          </h1>
+          <p class="hero-description">
+            Protecting farmers from harmful chemicals while increasing
+            productivity. Professional drone spraying services for the Ahafo
+            Region and beyond.
+          </p>
+          <div class="hero-buttons">
+            <a href="#services" class="btn btn-primary btn-lg">
+              Our Services
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="#about" class="btn btn-outline btn-lg">Learn More</a>
+          </div>
+          <div class="hero-features">
+            <div class="feature-pill">
+              <i class="fas fa-shield-alt"></i>
+              <span>Safe for Farmers</span>
+            </div>
+            <div class="feature-pill">
+              <i class="fas fa-bolt"></i>
+              <span>Efficient Coverage</span>
+            </div>
+            <div class="feature-pill">
+              <i class="fas fa-leaf"></i>
+              <span>Eco-Friendly</span>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="card">
-        <img src="./images/drone-f-3.jpg" alt="Service 2">
-        <div class="card-content">
-          <h3>Service 2</h3>
-          <p>Phasellus feugiat nulla et turpis volutpat, eget euismod felis iaculis.</p>
+      <div class="scroll-indicator">
+        <div class="scroll-indicator-inner">
+          <div class="scroll-dot"></div>
         </div>
       </div>
-      <div class="card">
-        <img src="./images/drone_2_edit.png" alt="Service 3">
-        <div class="card-content">
-          <h3>Service 3</h3>
-          <p>Morbi ac felis eget est ullamcorper posuere sit amet a ligula. Sed sit amet ipsum nunc.</p>
+    </section>
+
+    <!-- About Section  -->
+    <section id="about" class="about">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <h2 class="section-title">About Agrass Drone Development</h2>
+          <p class="section-description">
+            Pioneering safe and efficient agricultural solutions for rural
+            farmers in Ghana
+          </p>
+        </div>
+
+        <!-- Cards Grid -->
+        <div class="cards-grid">
+          <div class="card">
+            <div class="card-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3 class="card-title">About Us</h3>
+            <p class="card-text">
+              Agrass Drones Development is a business with the passion for
+              improving agriculture in rural areas through the use of drones. We
+              are located at Ayomso in the Ahafo Region close to Ayomso R/C
+              Basic School.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-icon">
+              <i class="fas fa-eye"></i>
+            </div>
+            <h3 class="card-title">Vision</h3>
+            <p class="card-text">
+              To become the leading provider of agricultural drone spraying
+              services in the region and across Ghana, ensuring safer and more
+              efficient farming practices for rural farmers.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-icon">
+              <i class="fas fa-bullseye"></i>
+            </div>
+            <h3 class="card-title">Mission</h3>
+            <p class="card-text">
+              To revolutionize agriculture by offering farmers an affordable and
+              safe spraying service using drone technology, reducing their
+              exposure to harmful chemicals while increasing productivity and
+              efficiency.
+            </p>
+          </div>
+        </div>
+
+        <!-- Innovation Section -->
+        <div class="innovation-section">
+          <div class="innovation-content">
+            <div class="innovation-badge">
+              <i class="fas fa-lightbulb"></i>
+              <span>Our Innovation</span>
+            </div>
+            <h3 class="innovation-title">
+              Born from a Vision to Protect Farmers
+            </h3>
+            <div class="innovation-text">
+              <p>
+                This innovation was born out of the realization that many rural
+                farmers struggle with health risks due to the chemicals they use
+                in their agricultural activities. Despite their hard work to
+                produce food, their well-being is often compromised by direct
+                exposure to harmful pesticides and fertilizers.
+              </p>
+              <p>
+                Recognizing this challenge, the founder set out to develop an
+                agricultural drone service that would handle spraying tasks for
+                farmers, eliminating their direct contact with hazardous
+                chemicals.
+              </p>
+              <p>
+                The service operates on a simple model—farmers can request drone
+                spraying whenever needed, paying for the service rather than
+                investing in expensive technology themselves. This approach
+                makes advanced agricultural solutions accessible to rural
+                farmers, improving their health, productivity, and overall
+                agricultural efficiency.
+              </p>
+              <p class="innovation-highlight">
+                With the ambition to scale from the local community to the
+                entire nation, this initiative aims to transform the way farming
+                is done in Ghana, making agriculture safer, more sustainable,
+                and technologically driven.
+              </p>
+            </div>
+          </div>
+          <div class="innovation-image">
+            <img
+              src="images/founder-with-agricultural-drone-in-ghana-farm.jpg"
+              alt="Founder with agricultural drone"
+            />
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
+    <!-- Services Section  -->
+    <section id="services" class="services">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <h2 class="section-title">Our Services</h2>
+          <p class="section-description">
+            Professional drone spraying solutions tailored to your agricultural
+            needs
+          </p>
+        </div>
 
+        <!-- Services Grid -->
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-image">
+              <img
+                src="images/drone-spraying-pesticide-on-crops.jpg"
+                alt="Pesticide Application"
+              />
+              <div class="service-image-overlay"></div>
+              <div class="service-icon">
+                <i class="fas fa-tint"></i>
+              </div>
+            </div>
+            <div class="service-content">
+              <h3 class="service-title">Pesticide Application</h3>
+              <p class="service-text">
+                Professional drone-based pesticide spraying that ensures even
+                coverage while keeping farmers safe from harmful chemical
+                exposure. Precise application reduces waste and environmental
+                impact.
+              </p>
+              <a href="#contact" class="service-link">
+                Learn More
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-image">
+              <img
+                src="images/agricultural-drone-fertilizer-application.jpg"
+                alt="Fertilizer Distribution"
+              />
+              <div class="service-image-overlay"></div>
+              <div class="service-icon">
+                <i class="fas fa-seedling"></i>
+              </div>
+            </div>
+            <div class="service-content">
+              <h3 class="service-title">Fertilizer Distribution</h3>
+              <p class="service-text">
+                Efficient fertilizer application using advanced drone
+                technology. Our service ensures optimal nutrient distribution
+                across your fields, promoting healthy crop growth and maximizing
+                yields.
+              </p>
+              <a href="#contact" class="service-link">
+                Learn More
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-image">
+              <img
+                src="images/drone-monitoring-crop-field-protection.jpg"
+                alt="Crop Protection Services"
+              />
+              <div class="service-image-overlay"></div>
+              <div class="service-icon">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+            </div>
+            <div class="service-content">
+              <h3 class="service-title">Crop Protection Services</h3>
+              <p class="service-text">
+                Comprehensive crop protection solutions including disease
+                prevention and pest control. Our drones provide rapid response
+                to agricultural threats, protecting your investment and harvest.
+              </p>
+              <a href="#contact" class="service-link">
+                Learn More
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
 
-  <section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <form id="contact-form">
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" required>
+        <!-- CTA Section -->
+        <div class="services-cta">
+          <div class="services-cta-content">
+            <div class="services-cta-text">
+              <h3 class="services-cta-title">Ready to Get Started?</h3>
+              <p class="services-cta-description">
+                Contact us today to schedule your drone spraying service
+              </p>
+            </div>
+            <a href="#contact" class="btn btn-primary btn-lg">
+              Request Service
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required>
+    <!-- Contact Section  -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <h2 class="section-title">Get in Touch</h2>
+          <p class="section-description">
+            Have questions or ready to schedule a service? We'd love to hear
+            from you
+          </p>
+        </div>
 
-      <label for="message">Message</label>
-      <textarea id="message" name="message" required></textarea>
+        <div class="contact-grid">
+          <!-- Contact Information -->
+          <div class="contact-info">
+            <div class="contact-cards">
+              <div class="contact-card">
+                <div class="contact-card-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div class="contact-card-content">
+                  <div class="contact-card-label">Phone</div>
+                  <a href="tel:0533965782" class="contact-card-value"
+                    >0533965782</a
+                  >
+                </div>
+              </div>
+              <div class="contact-card">
+                <div class="contact-card-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-card-content">
+                  <div class="contact-card-label">Email</div>
+                  <a
+                    href="mailto:manutheophilus227@gmail.com"
+                    class="contact-card-value"
+                    >manutheophilus227@gmail.com</a
+                  >
+                </div>
+              </div>
+              <div class="contact-card">
+                <div class="contact-card-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-card-content">
+                  <div class="contact-card-label">Location</div>
+                  <div class="contact-card-value">
+                    Ayomso, Ahafo Region, Ghana
+                  </div>
+                </div>
+              </div>
+            </div>
 
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
+            <!-- Map -->
+            <div class="contact-map">
+              <img
+                src="images/map-of-ayomso-ahafo-region-ghana.jpg"
+                alt="Location map"
+              />
+            </div>
+          </div>
 
-  <footer>
-    <p>&copy; 2025 Business Inc. All rights reserved.</p>
-    <div class="social-media">
-      <h4>Connect with us:</h4>
-      <p>0533965782</p>
-      <p>manutheophilus227@gmail.com</p>
-      <h4>Follow Us: </h4>
-      <a href="https://www.facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-      <a href="https://www.instagram.com" target="_blank" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
-      <a href="https://www.tiktok.com" target="_blank" class="social-icon"><i class="fab fa-tiktok"></i></a>
-      <a href="https://www.youtube.com" target="_blank" class="social-icon"><i class="fab fa-youtube"></i></a>
-    </div>
+          <!-- Contact Form -->
+          <div class="contact-form-wrapper">
+            <h3 class="contact-form-title">Send us a Message</h3>
+            <form id="contactForm" class="contact-form">
+              <div class="form-group">
+                <label for="name" class="form-label">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="form-input"
+                  placeholder="Your full name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="your.email@example.com"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  class="form-textarea"
+                  rows="6"
+                  placeholder="Tell us about your agricultural needs..."
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-lg btn-full">
+                Send Message
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  </footer>
+    <!-- Footer  -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Brand -->
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <div class="footer-logo-image">
+                <img
+                  src="images/agrass-drone-logo.jpg"
+                  alt="Agrass Drone Development"
+                />
+              </div>
+              <div class="footer-logo-text">
+                <div class="footer-logo-title">Agrass Drone Development</div>
+                <div class="footer-logo-subtitle">
+                  Safe Agricultural Solutions
+                </div>
+              </div>
+            </div>
+            <p class="footer-description">
+              Revolutionizing agriculture in Ghana through innovative drone
+              technology, making farming safer and more efficient for rural
+              communities.
+            </p>
+          </div>
 
-  <script src="script.js"></script>
-</body>
+          <!-- Quick Links -->
+          <div class="footer-links">
+            <h3 class="footer-heading">Quick Links</h3>
+            <ul class="footer-list">
+              <li><a href="#home" class="footer-link">Home</a></li>
+              <li><a href="#about" class="footer-link">About</a></li>
+              <li><a href="#services" class="footer-link">Services</a></li>
+              <li><a href="#contact" class="footer-link">Contact</a></li>
+            </ul>
+          </div>
 
+          <!-- Contact -->
+          <div class="footer-contact">
+            <h3 class="footer-heading">Connect With Us</h3>
+            <div class="footer-contact-info">
+              <p>
+                <a href="tel:0533965782" class="footer-contact-link"
+                  >0533965782</a
+                >
+              </p>
+              <p>
+                <a
+                  href="mailto:manutheophilus227@gmail.com"
+                  class="footer-contact-link"
+                  >manutheophilus227@gmail.com</a
+                >
+              </p>
+              <p class="footer-contact-text">Ayomso, Ahafo Region, Ghana</p>
+            </div>
+            <div class="footer-social">
+              <a
+                href="https://www.facebook.com/share/1ET2wsJuRP/?mibextid=wwXIfr"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+                aria-label="Facebook"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/agrassdronedevt?igsh=MXZyc3d4eHNydmJ6Zg%3D%3D&utm_source=qr"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+                aria-label="Instagram"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+          <p>
+            &copy; <span id="currentYear"></span> Agrass Drone Development. All
+            rights reserved.
+          </p>
+          <p>Made with care for Ghana's farmers</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>
