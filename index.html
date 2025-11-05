@@ -232,67 +232,117 @@
           </p>
         </div>
 
-        <!-- Services Grid -->
         <div class="services-grid">
-          <div class="service-card">
+          <!-- 🟢 Pesticide Application -->
+          <div
+            class="service-card"
+            onclick="openVideoModal('videos/drone-spraying.mp4')"
+          >
             <div class="service-image">
-              <img
-                src="images/drone-spraying-pesticide-on-crops.jpg"
-                alt="Pesticide Application"
-              />
+              <video
+                class="thumbnail-video"
+                muted
+                playsinline
+                preload="metadata"
+                poster=""
+              >
+                <source
+                  src="videos/drone-spraying.mp4#t=0.1"
+                  type="video/mp4"
+                />
+              </video>
               <div class="service-image-overlay"></div>
-              <div class="service-icon">
-                <i class="fas fa-tint"></i>
-              </div>
+              <div class="service-icon"><i class="fas fa-play"></i></div>
             </div>
             <div class="service-content">
               <h3 class="service-title">Pesticide Application</h3>
               <p class="service-text">
                 Professional drone-based pesticide spraying that ensures even
                 coverage while keeping farmers safe from harmful chemical
-                exposure. Precise application reduces waste and environmental
-                impact.
+                exposure.
               </p>
             </div>
           </div>
-          <div class="service-card">
+
+          <!-- 🟢 Fertilizer Distribution -->
+          <div
+            class="service-card"
+            onclick="openVideoModal('videos/drone-fertilizer.mp4')"
+          >
             <div class="service-image">
-              <img
-                src="images/agricultural-drone-fertilizer-application.jpg"
-                alt="Fertilizer Distribution"
-              />
+              <video
+                class="thumbnail-video"
+                muted
+                playsinline
+                preload="metadata"
+                poster=""
+              >
+                <source
+                  src="videos/drone-fertilizer.mp4#t=0.1"
+                  type="video/mp4"
+                />
+              </video>
               <div class="service-image-overlay"></div>
-              <div class="service-icon">
-                <i class="fas fa-seedling"></i>
-              </div>
+              <div class="service-icon"><i class="fas fa-play"></i></div>
             </div>
             <div class="service-content">
               <h3 class="service-title">Fertilizer Distribution</h3>
               <p class="service-text">
                 Efficient fertilizer application using advanced drone
-                technology. Our service ensures optimal nutrient distribution
-                across your fields, promoting healthy crop growth and maximizing
-                yields.
+                technology.
               </p>
             </div>
           </div>
-          <div class="service-card">
+
+          <!-- 🟢 Crop Protection -->
+          <div
+            class="service-card"
+            onclick="openVideoModal('videos/drone-monitoring.mp4')"
+          >
             <div class="service-image">
-              <img
-                src="images/drone-monitoring-crop-field-protection.jpg"
-                alt="Crop Protection Services"
-              />
+              <video
+                class="thumbnail-video"
+                muted
+                playsinline
+                preload="metadata"
+                poster=""
+              >
+                <source
+                  src="videos/drone-monitoring.mp4#t=0.1"
+                  type="video/mp4"
+                />
+              </video>
               <div class="service-image-overlay"></div>
-              <div class="service-icon">
-                <i class="fas fa-shield-alt"></i>
-              </div>
+              <div class="service-icon"><i class="fas fa-play"></i></div>
             </div>
             <div class="service-content">
               <h3 class="service-title">Crop Protection Services</h3>
               <p class="service-text">
-                Comprehensive crop protection solutions including disease
-                prevention and pest control. Our drones provide rapid response
-                to agricultural threats, protecting your investment and harvest.
+                Comprehensive crop protection solutions including pest control
+                and disease prevention.
+              </p>
+            </div>
+          </div>
+
+          <!-- 🟢 Generator Maintenance -->
+          <div
+            class="service-card"
+            onclick="openVideoModal('videos/generator-maintenance.mp4')"
+          >
+            <div class="service-image">
+              <img
+                src="images/generator-maintenance-thumbnail.jpeg"
+                alt="Generator Maintenance"
+                class="thumbnail-image"
+              />
+              <div class="service-image-overlay"></div>
+              <div class="service-icon"><i class="fas fa-play"></i></div>
+            </div>
+            <div class="service-content">
+              <h3 class="service-title">Generator Maintenance & Monitoring</h3>
+              <p class="service-text">
+                Reliable drone-assisted generator inspection and maintenance
+                services.
               </p>
             </div>
           </div>
@@ -533,6 +583,12 @@
       </div>
     </footer>
 
+    <div id="videoModal" class="modal">
+      <span class="close" onclick="closeVideoModal()">&times;</span>
+      <div class="modal-content">
+        <div id="videoPlayer"></div>
+      </div>
+    </div>
     <script src="js/script.js"></script>
   </body>
 </html>
